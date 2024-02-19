@@ -159,6 +159,10 @@
   #aviso, #mostrapalavras, #mostracaracteres {
     font-size: 20px;
   }
+
+  #mostrapalavras, #mostracaracteres {
+    padding: 0px 0px 0px 5px
+  }
     
   }
 
