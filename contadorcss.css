@@ -130,6 +130,14 @@
     margin: 2vh;
 }
 
+@media screen and (max-width: 645px)  {
+  body {
+    font-size: 5.5vh;
+  }
+
+  
+}
+
 @media screen and (min-width: 701px) and (max-width: 1120px) {
 
   .lbl {
@@ -154,6 +162,8 @@
    }
 }
 
+
+
 @media screen  and (max-height: 618px) {
   *{
     font-size: 5.5vh;
@@ -165,7 +175,7 @@
     margin-top: 5px;
 }
 
-  #text { 
+  #text {
     width: 90vw;
     height: 45vh ;
    }
@@ -177,6 +187,9 @@
    .form {
     width: 33vh;
     height: 8vh; }
+  } 
+    
+
 
     @media screen  and (max-height: 234px) and (min-height: 208px)  {
      
@@ -218,6 +231,15 @@
       }
     }
    
+@media screen and (min-height: 450px)  {
+  * {
+    font-size: 4vh;
+  }
+
+  .form {
+    padding: 0.3px;
+  }
+  
 }
 
 
