@@ -154,6 +154,7 @@
 
   #text {
     width: 65vw;
+    height: 20vw;
   }
 
   #aviso, #mostrapalavras, #mostracaracteres {
