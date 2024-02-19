@@ -155,6 +155,10 @@
   #text {
     width: 65vw;
   }
+
+  #aviso, #mostrapalavras, #mostracaracteres {
+    font-size: 20px;
+  }
     
   }
 
