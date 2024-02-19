@@ -130,9 +130,38 @@
     margin: 2vh;
 }
 
+@media screen and (max-width: 644px)  {
+  .lbl {
+    display: block;
+    font-size: 20px;
+    padding-top: 7px;
+    margin-right: 1px;
+  }
+
+  #formsarea {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .indicador {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #text {
+    width: 65vw;
+  }
+    
+  }
+
 @media screen and (max-width: 645px)  {
   body {
     font-size: 5.5vh;
+    
   }
 
   
