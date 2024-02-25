@@ -50,6 +50,7 @@ wordcheck.addEventListener('change', function Test() {
             if (howmanycharas > charalimit) {
             window.document.getElementById('text').style.color = 'red'
             window.document.getElementById('aviso').style.display = 'block'
+            window.document.getElementById('aviso').style.color = 'red'
             const charadiff = howmanycharas - charalimit
                 if (charadiff == 1) {
                 window.document.getElementById('aviso').innerHTML = ` Precisa diminuir só mais um caractere! Quase lá!`
@@ -74,6 +75,7 @@ wordcheck.addEventListener('change', function Test() {
         if (howmanycharas > charalimit && howmanywords <= wordlimit) {
             window.document.getElementById('text').style.color = 'red'
        window.document.getElementById('aviso').style.display = 'block'
+       window.document.getElementById('aviso').style.color = 'red'
        const charadiff = howmanycharas - charalimit
        if (charadiff == 1) {
            window.document.getElementById('aviso').innerHTML = ` Precisa diminuir só mais um caractere! Quase lá!`
@@ -177,6 +179,7 @@ window.document.getElementById('aviso').innerHTML = ` Você pode digitar mais ${
        if (howmanywords > wordlimit) {
         window.document.getElementById('text').style.color = 'red'
         window.document.getElementById('aviso').style.display = 'block'
+        window.document.getElementById('aviso').style.color = 'red'
         const worddiff = howmanywords - wordlimit
         if (worddiff == 1) {
             window.document.getElementById('aviso').innerHTML = ` Precisa diminuir só mais uma palavra! Quase lá!`
@@ -206,6 +209,7 @@ window.document.getElementById('aviso').innerHTML = ` Você pode digitar mais ${
         if (howmanycharas > charalimit && howmanywords <= wordlimit) {
             window.document.getElementById('text').style.color = 'red'
        window.document.getElementById('aviso').style.display = 'block'
+       window.document.getElementById('aviso').style.color = 'red'
        const charadiff = howmanycharas - charalimit
        if (charadiff == 1) {
            window.document.getElementById('aviso').innerHTML = ` Precisa diminuir só mais um caractere! Quase lá!`
