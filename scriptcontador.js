@@ -103,10 +103,10 @@ var ContaPalavras = function Test() {
                 window.document.getElementById('aviso').innerHTML =  `Você precisa deletar 1 palavra e 1 caractere! Quase lá!`}
             else if (worddiff  !== 1 && charadiff == 1)  {window.document.getElementById('aviso').innerHTML =  `Você precisa deletar ${worddiff} palavras e  1 caractere!`}
             else if (worddiff  == 1 && charadiff !== 1)  {
-                window.document.getElementById('aviso').innerHTML =  `Você precisa diminuir 1 palavra e ${charadiff} caracteres! Quase lá!`
+                window.document.getElementById('aviso').innerHTML =  `Você precisa deletar 1 palavra e ${charadiff} caracteres! Quase lá!`
 
             } else if (worddiff  !== 1 && charadiff !== 1) {
-                window.document.getElementById('aviso').innerHTML =  `Diminuir ${worddiff} palavras e  ${charadiff} caracteres! Quase lá!`
+                window.document.getElementById('aviso').innerHTML =  `Você precisa deletar ${worddiff} palavras e  ${charadiff} caracteres! Quase lá!`
  
             }
 
@@ -241,10 +241,10 @@ window.document.getElementById('aviso').innerHTML = `Você pode digitar mais ${s
                 window.document.getElementById('aviso').innerHTML =  `Você precisa deletar 1 palavra e 1 caractere! Quase lá!`}
             else if (worddiff  !== 1 && charadiff == 1)  {window.document.getElementById('aviso').innerHTML =  `Você precisa deletar ${worddiff} palavras e 1 caractere!`}
             else if (worddiff  == 1 && charadiff !== 1)  {
-                window.document.getElementById('aviso').innerHTML =  `Você precisa diminuir 1 palavra e ${charadiff} caracteres! Quase lá!`
+                window.document.getElementById('aviso').innerHTML =  `Você precisa deletar 1 palavra e ${charadiff} caracteres! Quase lá!`
 
             } else if (worddiff  !== 1 && charadiff !== 1) {
-                window.document.getElementById('aviso').innerHTML =  `Diminuir ${worddiff} palavras e ${charadiff} caracteres! Quase lá!`
+                window.document.getElementById('aviso').innerHTML =  `Você precisa deletar ${worddiff} palavras e ${charadiff} caracteres! Quase lá!`
  
             }
         
