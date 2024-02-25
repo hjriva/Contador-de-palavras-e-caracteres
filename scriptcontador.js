@@ -14,8 +14,7 @@ var wordcheck = window.document.getElementById('wordoption')
 var characheck = window.document.getElementById('characteroption')
 
 //para o caso de digitar e então restringir
-
-wordcheck.addEventListener('change', function Test() {
+var ContaPalavras = function Test() {
     if (wordcheck.checked) {
         var palavras = window.document.getElementById('mostrapalavras').innerText
         var howmanywords = Number(palavras)
@@ -134,10 +133,12 @@ wordcheck.addEventListener('change', function Test() {
     
        }
 
+       if (characheck.checked && wordcheck.checked == false) {
+        ContaCaracteres()
+       }
     }
-) 
 
-characheck.addEventListener('change', function TestChara() {
+var ContaCaracteres = function TestChara() {
     if (characheck.checked) {
     var caracteres = window.document.getElementById('mostracaracteres').innerText
     var howmanycharas = Number(caracteres)
@@ -274,12 +275,16 @@ window.document.getElementById('aviso').innerHTML = ` Você pode digitar mais ${
 
        }
      
-       
+       if (characheck.checked == false && wordcheck.checked) {
+        ContaPalavras()
+       }
 
    }
 
-  
-) 
+
+wordcheck.addEventListener('change', ContaPalavras)
+
+characheck.addEventListener('change', ContaCaracteres)
 
 document.getElementById('wordnum').addEventListener('focus', function() {
     if (wordcheck.checked) {
