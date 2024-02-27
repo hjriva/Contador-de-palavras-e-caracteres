@@ -129,6 +129,9 @@ var ContaPalavras = function Test() {
 
     )
             
+        }  else if (howmanywords == wordlimit && howmanycharas < charalimit)  {
+            const subcharas = charalimit - howmanycharas
+            window.document.getElementById('aviso').innerHTML = `Seu texto atingiu o limite de palavras estabelecido! Não pode digitar mais nenhuma palavra, mas pode digitar ${subcharas} caracteres.`
         }
     
        }
@@ -270,8 +273,10 @@ window.document.getElementById('aviso').innerHTML = `Você pode digitar mais ${s
             
         }
     
-
-       
+        else if (howmanywords == wordlimit && howmanycharas < charalimit) {
+            const subcharas = charalimit - howmanycharas
+            window.document.getElementById('aviso').innerHTML = `Seu texto atingiu o limite de palavras estabelecido! Não pode digitar mais nenhuma palavra, mas pode digitar ${subcharas} caracteres.`
+        }
 
        }
      
