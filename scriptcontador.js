@@ -56,7 +56,21 @@ var ContaPalavras = function Test() {
                 } else {
                 window.document.getElementById('aviso').innerHTML = `Você precisa deletar ${charadiff} caracteres!`}
             }
-    } 
+            else if (howmanycharas <= charalimit)  { 
+                window.document.getElementById('text').style.color = 'initial'
+                window.document.getElementById('aviso').style.color = 'green'
+                window.document.getElementById('aviso').style.display = 'block'
+            const subcharas = charalimit - howmanycharas
+                 if (subcharas == 1) {  window.document.getElementById('aviso').innerHTML = `Você pode digitar mais um caractere!`}
+             else if (subcharas == 0) {
+             window.document.getElementById('aviso').innerHTML = `Seu texto atingiu o limite de caracteres estabelecido! Não pode digitar mais nenhum caractere.`
+            
+            } else { 
+            window.document.getElementById('aviso').innerHTML = `Você pode digitar mais ${subcharas} caracteres!`
+            }   
+
+    } }
+   
 
     else { 
         window.document.getElementById('text').style.color = 'initial'
@@ -141,6 +155,7 @@ var ContaPalavras = function Test() {
        }
     }
 
+/*
 var ContaCaracteres = function TestChara() {
     if (characheck.checked) {
     var caracteres = window.document.getElementById('mostracaracteres').innerText
@@ -285,11 +300,11 @@ window.document.getElementById('aviso').innerHTML = `Você pode digitar mais ${s
        }
 
    }
-
+*/
 
 wordcheck.addEventListener('change', ContaPalavras)
 
-characheck.addEventListener('change', ContaCaracteres)
+characheck.addEventListener('change', ContaPalavras)
 
 document.getElementById('wordnum').addEventListener('focus', function() {
     if (wordcheck.checked) {
@@ -351,7 +366,7 @@ document.getElementById('text').addEventListener('input', function Contador() {
 
     
 ContaPalavras()
-ContaCaracteres()
+//ContaCaracteres()
 
 
 
