@@ -69,7 +69,9 @@ var ContaPalavras = function Test() {
             window.document.getElementById('aviso').innerHTML = `Você pode digitar mais ${subcharas} caracteres!`
             }   
 
-    } }
+    } 
+}
+
    
 
     else { 
@@ -150,9 +152,7 @@ var ContaPalavras = function Test() {
     
        }
 
-       if (characheck.checked && wordcheck.checked == false) {
-        ContaCaracteres()
-       }
+       //if (characheck.checked && wordcheck.checked == false) {ContaCaracteres()}
     }
 
 /*
