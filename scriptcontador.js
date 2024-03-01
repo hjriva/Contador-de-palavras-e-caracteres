@@ -14,7 +14,7 @@ var wordcheck = window.document.getElementById('wordoption')
 var characheck = window.document.getElementById('characteroption')
 
 //para o caso de digitar e então restringir
-var ContaPalavras = function Test() {
+var ContaPalavras = function Test() {   
     if (wordcheck.checked) {
         var palavras = window.document.getElementById('mostrapalavras').innerText
         var howmanywords = Number(palavras)

@@ -108,7 +108,8 @@
     padding: 1vh;
     letter-spacing: 1px;
     border-radius: 5px;
-    font-size: 10pt
+    font-size: 10pt;
+    
 }
 
 
@@ -223,9 +224,7 @@
     font-size: 5vh
    }
 
-   .form {
-    width: 33vh;
-    height: 8vh; }
+   
   } 
     
 
