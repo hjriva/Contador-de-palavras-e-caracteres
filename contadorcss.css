@@ -131,7 +131,7 @@
     margin: 2vh;
 }
 
-@media screen and (max-width: 644px)  {
+@media screen and  (max-width: 782px)  {
   .lbl {
     display: block;
     font-size: 20px;
